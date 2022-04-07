@@ -1,0 +1,64 @@
+/*ipads and tablets*/
+@media screen and (max-width:768px){
+    [aria-controls='navbar-dropdown']{
+        display:flex;
+    }
+    [aria-expanded="false"]~ul{
+        display:none;
+    }
+    [aria-expanded="true"]~.nav-bar-list{
+        display:flex;
+        flex-direction:column;
+        background-image:linear-gradient(to right, transparent,rgba(255,255,255,0.7));
+        font-size:var(--size-30);
+        box-shadow: 0px 0px 20px 10px rgba(52,49,75,0.5);
+    }
+    .container{
+        top:0;
+    }
+    .hero-wrapper{
+       padding-top:var(--size-20);
+    }
+    .service-text p{
+        font-size:14px;
+      
+    }
+    .cards-container{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #play-button{
+        width:var(--size-100);
+        height:var(--size-100);
+        position:absolute;
+        z-index:100;
+        top:60%;
+        left:35%;
+        transform:translate(-75% -50%);
+        box-shadow:5px 10px 10px 5px rgba(176,196,222,0.7);
+        margin-bottom:-6.25rem;
+    }
+    .pricing-header p{
+       font-size:var(--size-1); 
+       flex-direction: column;
+       display:flex;
+       flex-wrap: wrap; 
+       justify-items: stretch;
+       padding:0;
+    }
+    .pricing-table{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        margin:auto;
+        width:1000px;
+    }
+    .price-card-1 h3, .price-card-2 h3,.price-card-3 h3, .price,.billed{
+        text-align:left;
+    }
+    .card-button-container{
+        text-align:left;
+        margin-top:var(--size-30);
+     }
+}
